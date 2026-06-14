@@ -127,6 +127,16 @@ script -q -c "kubectl exec -it test-pod -- sh -c 'id; hostname'" /dev/null
 
 Déployé via `helm upgrade --set falcosidekick.enabled=true --set falcosidekick.webui.enabled=true`, exposé sur `http://localhost:2802`.
 
+**Accès :**
+
+| Champ | Valeur |
+|---|---|
+| URL | `http://localhost:2802` |
+| Login | `admin` |
+| Mot de passe | `admin` |
+
+> Identifiants par défaut du chart Helm (secret Kubernetes `falco-falcosidekick-ui`, champ `FALCOSIDEKICK_UI_USER`).
+
 **Statistiques observées (24h) :**
 
 - **8 alertes** au total
