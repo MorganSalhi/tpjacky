@@ -1,0 +1,7 @@
+driver:
+  kind: modern_ebpf
+falcosidekick:
+  enabled: true
+  webui:
+    enabled: true
+tty: true
